@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="WEB:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="601a4ee8-746d-4703-a888-2537665f00f4" name="Default" comment="Пока вроде все работает">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/data/DateFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/exceptions/NotPeriodException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Auto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/DataAccessLayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Greencard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Polis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/auto.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/client.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/polis.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/css/groundwork-anim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/css/groundwork-core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/css/groundwork-ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/css/groundwork-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/css/groundwork-type.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/css/groundwork-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/css/groundwork.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/css/placeholder_polyfill.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/museo-slab-500-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/museo-slab-500-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/museo-slab-500-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/museo-slab-500-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/quicksand-regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/quicksand-regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/quicksand-regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/quicksand-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-bold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/redacted-script-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/sourcesanspro-regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/sourcesanspro-regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/sourcesanspro-regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/fonts/sourcesanspro-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/images/black_linen_v2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/images/diag6-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/images/example-usage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/images/groundwork-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/images/groundwork-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/images/layout-a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/images/layout-b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/images/layout-c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/components/checklists.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/components/dismissible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/components/equalizeColumns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/components/forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/components/menus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/components/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/components/tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/demo/ZeroClipboard.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/demo/jquery.snippet.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/groundwork.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/libs/PIE.htc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/libs/PIE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/libs/boxsizing.htc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/libs/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/libs/modernizr-2.6.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/libs/placeholder_polyfill.jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/plugins/jquery-placeholderText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/plugins/jquery-responsiveTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/plugins/jquery-responsiveText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/js/plugins/jquery-truncateLines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/newCascadeStyleSheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/components/checklists.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/components/dismissible.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/components/equalizeColumns.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/components/forms.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/components/menus.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/components/navigation.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/components/tabs.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/groundwork.all.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/plugins/jquery-placeholderText.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/plugins/jquery-responsiveTables.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/plugins/jquery-responsiveText.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/coffee/plugins/jquery-truncateLines.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/animations.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/boxes.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/breakpoints.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/buttons.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/forms.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/grid.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/groundworkcss.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/helpers.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/home.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/icons.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/layout-a.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/layout-b.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/layout-c.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/layout-d.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/media-queries.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/messages.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/navigation.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/placeholder-text.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/responsive-text.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/tables.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/tabs.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/template.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/jade/typography.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/_settings.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_all-animations.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_bounce.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_fade.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_flash.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_flip.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_hinge.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_lightspeed.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_pulse.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_roll.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_rotate.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_shake.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_slide.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_spin.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_swing.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_tada.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_wiggle.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/anim/_wobble.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/base/_all-base.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/base/_flex-box.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/base/_global.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/base/_grid.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/base/_hbox-vbox.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/base/_helpers.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/base/_reset.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/core/_all-core.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/core/_breakpoints.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/core/_constants.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/core/_defaults.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/core/_mixins-core.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/core/_palette.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/demo/_jquery.snippet.groundwork.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/demo/jquery.snippet.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/groundwork-anim.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/groundwork-core.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/groundwork-ie.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/groundwork-responsive.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/groundwork-type.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/groundwork-ui.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/groundwork.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/icons/_all-icons.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/icons/_font-awesome-ie7.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/icons/_font-awesome.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/icons/font-awesome/_core.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/icons/font-awesome/_extras.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/icons/font-awesome/_icons.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/icons/font-awesome/_path.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/icons/font-awesome/_variables.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/responsive/_all-responsive.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/responsive/_desktop.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/responsive/_helpers-responsive.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/responsive/_ipad.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/responsive/_mobile.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/responsive/_small-tablet.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/type/_all-type.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/type/_link-type-icons.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/type/_typography.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/type/_webfonts.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/ui/_all-ui.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/ui/_boxes.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/ui/_buttons.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/ui/_forms.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/ui/_messages.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/ui/_nav.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/ui/_tables.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/groundwork/src/sass/ui/_tabs.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/resogreencard/form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/resogreencard/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/resogreencard/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-2.1.4.min.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="crm@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="crm@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="crm@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="crm: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="crm@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="crm: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="crm@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="crm: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Auto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Auto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="greencard.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.jspf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/client.jspf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auto.jspf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/auto.jspf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="polis.jspf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/polis.jspf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="897">
+              <caret line="82" selection-start-line="82" selection-end-line="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Greencard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Greencard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <folding>
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Antoxa" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/DataAccessLayer.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/797c623a-194b-422f-a1a7-79f2d763b3e5/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/exceptions/NotPeriodException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Polis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/data/DateFormat.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/polis.jspf" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/client.jspf" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/auto.jspf" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="WEB" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="WEB" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1561" />
+    <option name="y" value="44" />
+    <option name="width" value="1260" />
+    <option name="height" value="959" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="greencard" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/glassfish5/glassfish/domains/domain1/applications/CRM" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.WEB [deploy]">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/CRM" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="WEB:war">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="admin" />
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="WEB:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="transportHostId" value="" />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="37545" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="WEB [deploy]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="deploy" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration name="WEB [install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.WEB [install]" />
+      <item itemvalue="Maven.WEB [deploy]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.WEB [deploy]" />
+        <item itemvalue="Maven.WEB [install]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="601a4ee8-746d-4703-a888-2537665f00f4" name="Default" comment="" />
+      <created>1527845422793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527845422793</updated>
+      <workItem from="1527845428375" duration="5226000" />
+      <workItem from="1528292975803" duration="16340000" />
+      <workItem from="1528966831216" duration="8218000" />
+      <workItem from="1529310947848" duration="17935000" />
+      <workItem from="1530191103017" duration="3690000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="51409000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1279" y="0" width="1922" height="1081" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.184375" />
+      <window_info anchor="right" id="CDI" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.21614583" />
+      <window_info anchor="right" id="JSF" order="3" />
+      <window_info id="Structure" order="1" sideWeight="0.5015244" side_tool="true" visible="true" weight="0.16354166" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39938712" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299285" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.16354166" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3299285" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.2887755" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Пока вроде все работает" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пока вроде все работает" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/MainController.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Polis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/client.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/auto.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/polis.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="70" lean-forward="true" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Greencard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="82" selection-start-line="82" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/DataAccessLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Auto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Polis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="101" selection-start-line="14" selection-start-column="101" selection-end-line="14" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/data/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/exceptions/NotPeriodException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/polis.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/DataAccessLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Auto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Polis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="101" selection-start-line="14" selection-start-column="101" selection-end-line="14" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/polis.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/exceptions/NotPeriodException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/DataAccessLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Auto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Polis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="107" column="139" selection-start-line="107" selection-start-column="139" selection-end-line="107" selection-end-column="139" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/exceptions/NotPeriodException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/797c623a-194b-422f-a1a7-79f2d763b3e5/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/exceptions/NotPeriodException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/ru.spb.lanton.soft.ag.crm.web.MainController">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>ru.spb.lanton.soft.ag.crm.web.MainController</OriginalElement>
+          <nodes>
+            <node x="" y="">ru.spb.lanton.soft.ag.crm.web.MainController</node>
+            <node x="" y="">org.springframework.stereotype.Controller</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="67.0" y="56.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/data/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/DataAccessLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e99941d3-2d66-4c42-98e0-f2f427cba52f/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://DATABASE/797c623a-194b-422f-a1a7-79f2d763b3e5">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>797c623a-194b-422f-a1a7-79f2d763b3e5</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="298.0" y="462.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Polis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Auto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/auto.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/client.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard/polis.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/greencard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/model/Greencard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spb/lanton/soft/ag/crm/web/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="82" selection-start-line="82" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>WEB:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (WEB)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|WEB</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<h2>Сведения о страхователе:</h2>
+<form:form modelAttribute="client" action="greencard?p=3" method="POST">
+    <fieldset>
+        <span>Документ: </span> <form:input path="" />
+        <span>Серия: </span> <form:input path="" />
+        <span>Номер: </span> <form:input path="" />
+        <span>Дата выдачи: </span> <form:input path="" />
+        <span>Кем выдан: </span> <form:input path="" />
+        <br /> <hr />
+        <span>Фамилия: </span><form:input path="lastName"/>
+        <span>Имя: </span><form:input path="name"/>
+        <span>Отчество: </span> <form:input path="fatherName" />
+        <span>Фамилия ENG: </span> <form:input path="lastName_ENG" />
+        <span>Имя ENG: </span> <form:input path="name_ENG" />
+        <br /> <hr />
+        <span>Адрес регистрации: </span> <form:input path="" />
+        <span>Адрес регистрации ENG: </span> <form:input path="" />
+        <br /> <hr />
+        <span>Мобильный телефон: </span> <form:input path="phone_mobile" />
+        <span>Домашний телефон: </span> <form:input path="phone_home" />
+        <span>Рабочий телефон: </span> <form:input path="phone_job" />
+        <span>E-mail: </span> <form:input path="email" />
+    </fieldset>
+    <br />
+    <form:button class="left red button">Назад</form:button>
+    <form:button class="right green button">Далее</form:button>
+</form:form>

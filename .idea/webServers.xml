@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="006bdea8-b510-4361-b1d6-1d217a6ad7c3" name="CRM" url="http://localhost:8080">
+        <fileTransfer port="0" mountedRoot="$USER_HOME$/glassfish5/glassfish/domains/domain1/applications/CRM" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

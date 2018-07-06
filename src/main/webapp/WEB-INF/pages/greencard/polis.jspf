@@ -1,0 +1,44 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<h2>Сведения о полисе:</h2>
+<form:form modelAttribute="polis" action="greencard?p=2" method="POST">
+    <fieldset>
+        <span>Тип полиса: </span> <input type="text" value="${polis_type}" disabled="true" />
+        <span>Страховая компания: </span> <form:select path="insurance_id" items="${companys}"/>
+        <span>Номер полиса: </span> <form:input path="number" size="20"/>
+        <span>Серия полиса: </span> <form:input path="seria" size="20"/>
+        <span>Период страхования: </span> <form:select id="period" onchange="checkDate()" path="period" items="${period}"/>
+        <span>Территория действия: </span> <form:select path="territory_id" items="${territory}"/>
+        <span>Срок действия:</span> <span>с:</span> <input id="date_from" type="date" onchange="checkDate()" size="10" /> <span>по:</span> <input id="date_to" type="date" size="10" disabled="true" />
+        <span>Дата продажи: </span> <span> <input id="date_sale" type="date" size="10" value="${date_sale}" disabled="true"/> </span>
+    </fieldset>
+    <br />
+    <form:button class="left red button">Назад</form:button>
+    <form:button class="right green button">Далее</form:button>
+</form:form>
+<script type="text/javascript">
+    function checkDate() {
+        if ($('#date_from').val() < $('#date_sale').val()) {
+            $('#date_from').addClass('red'); // типа если дата действия меньше даты продажи, то подсвечиваем красным и выводим подсказку с ошибкой!
+        } else {
+            $('#date_from').removeClass('red');
+        }
+        var date_to = new Date($('#date_from').val());
+        var period = $('#period').val();
+        if (period == 15) {
+            var dayPlus = Number($('#period').val()) + date_to.getDate();
+            date_to.setDate(dayPlus - 1);
+        } else {
+            // здесь еще надо доработаь в соответсвии с рекомендациями. особое внимание уделать весоскосному году с февралем!
+            var month_plus = Number(period) + date_to.getMonth();
+            date_to.setMonth(month_plus);
+            date_to.setDate(date_to.getDate() - 1);
+        }
+        
+        var d = date_to.getFullYear() + "-" + addZero(date_to.getMonth()+1) + "-" + addZero(date_to.getDate());
+        $('#date_to').val(d);
+    }
+    function addZero(n) {
+        return n < 10 ? "0"+n : n;
+    }
+</script>
