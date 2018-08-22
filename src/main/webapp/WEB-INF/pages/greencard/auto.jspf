@@ -2,15 +2,11 @@
 <%@ page pageEncoding="UTF-8" %>
 <h2>Сведения о транспортном средстве:</h2>
 <form:form modelAttribute="auto" action="greencard?p=end" method="POST">
-    <fieldset>
-        <span>Марка: </span> <form:input path="brand"/>
-        <span>Модель:</span> <form:input path="model"/>
-        <span>Регистрационный номер: </span> <form:input path="reg_number"/>
-        <span>Номер СТС: </span> <form:input path=""/>
-        <span>Дата выдачи: </span> <form:input path=""/>
-        <span>Тип ТС: </span> <form:input path="type_id"/>
-        <span> </span> <form:input path=""/>
-        <span> </span> <form:input path=""/>
+    <fieldset class="form-polis">
+        <span>Марка: </span> <form:input path="brand"/> <br />
+        <span>Модель:</span> <form:input path="model"/> <br />
+        <span>Регистрационный номер: </span> <form:input path="reg_number"/> <br />
+        <span>Категория ТС: </span> <form:select path="type_id" items="${typeAuto}"/>
     </fieldset>
     <br />
     <form:button class="left red button">Назад</form:button>

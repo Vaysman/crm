@@ -1,0 +1,72 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<form:form modelAttribute="segment" class="form-segment" action="segment" method="POST">
+    <fieldset>
+        <legend>Введите данные необходимые для анализа:</legend>
+        <fieldset>
+            <legend>Статус клиента</legend>
+            <form:radiobuttons path="face_id" items="${face_id}" delimiter="<br />" required="true"/>
+        </fieldset>
+        <fieldset>
+            <legend>Тип полиса</legend>
+            <form:radiobuttons path="status_id" items="${status_id}" delimiter="<br />" required="true" />
+        </fieldset>
+        <fieldset>
+            <legend>Водительское удостоверение</legend>
+            <form:radiobuttons path="license_id" items="${license_id}" delimiter="<br />" required="true" />
+        </fieldset>
+        <fieldset>
+            <legend>Категория ТС</legend>
+            <form:select path="category_id" items="${category_id}" onchange="choiceCategoryTC(this.options[this.selectedIndex].value)" />
+            <br />
+            <span id="M" class="choiceCategoryTC hidden">мопед</span>
+            <span id="A" class="choiceCategoryTC hidden">мотоцикл</span>
+            <span id="B" class="choiceCategoryTC">автомобиль</span>
+            <span id="B1" class="choiceCategoryTC hidden">трицикл/квадрицикл</span>
+            <span id="C" class="choiceCategoryTC hidden">грузовой автомобиль (разреш. макс. массой более 3,5т)</span>
+            <span id="C1" class="choiceCategoryTC hidden">грузовой автомобиль (разреш. макс. массой более 3,5т и менее 7,5т)</span>
+            <span id="D" class="choiceCategoryTC hidden">автобус (более 8 сидячих мест помимо водителя)</span>
+            <span id="D1" class="choiceCategoryTC hidden">автобус (более 8 сидячих мест помимо водителя, менее 16)</span>
+            <span id="BE" class="choiceCategoryTC hidden">прицеп к легковому автомобилю массой более 750 кг.</span>
+            <span id="C1E" class="choiceCategoryTC hidden">автомобили подкатегории «C1» с прицепом более 750 килограммов, общая разрешенная максимальная масса состава транспортных средств не превышает 12т.</span>
+            <span id="CE" class="choiceCategoryTC hidden">автомобили категории «C» с прицепом более 750 кг.</span>
+            <span id="D1E" class="choiceCategoryTC hidden">автомобили подкатегории «D1» с прицепом, который не предназначен для перевозки пассажиров, разреш. Макс. массой более 750 кг. общая разрешенная максимальная масса состава транспортных средств не превышает 12т.</span>
+            <span id="DE" class="choiceCategoryTC hidden">автомобили категории «D» с прицепом разр.макс.массой более 750 кг.; сочлененные автобусы</span>
+        </fieldset>
+        <fieldset>
+            <legend>Коэффициент территориальности</legend>
+            <form:select path="territory_id" items="${territory_id}" />
+        </fieldset>
+        <fieldset>
+            <legend>Год выпуска ТС</legend>
+            <form:input path="yearAuto" type="number" size="4" value="2015" min="1950" max="2018" required="true" />
+        </fieldset>
+        <fieldset>
+            <legend>Страна производитель автомобиля</legend>
+            <form:radiobuttons path="fromAuto_id" items="${fromAuto_id}" required="true" delimiter="<br />"/>
+        </fieldset>
+        <fieldset>
+            <legend>Мощность ТС</legend>
+            <form:input path="powerAuto" type="number" size="4" value="100" min="1" max="1500" required="true" /> л.с.                    
+        </fieldset>
+        <fieldset>
+            <legend>Допущенные к управлению ТС</legend>
+            <form:radiobuttons path="countDriver" items="${countDriver}" onclick="badDriver(this.value);" delimiter="<br />" />
+            <fieldset id="badDriverForm">
+                <legend>Данные о самом хуевом из допущенных</legend>
+                Дата рождения: <input type="date" id="dob" onchange="calculateExperience(this.id)" /> <br />
+                Полных лет: <form:input path="yearOld" type="hidden" value="25" /> <input id="yearOldView" type="number" min="18" max="110" value="25" disabled/> <br />
+                Дата выдачи ВУ: <input type="date" id="dol" onchange="calculateExperience(this.id)" /> <br />
+                Водительский стаж: <form:input path="yearLicense" type="hidden" value="3" /> <input id="yearLicenseView" type="number" min="0" max="92" value="3" disabled />
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>КБМ</legend>
+            <form:input path="kbm" type="number" size="4" value="1" step="0.05" min="0.5" max="2.45" required="true"/>
+        </fieldset>
+        <input type="hidden" name="user" value="user" />
+        <button class="green button right">Расчитать</button>
+        <button type="reset" class="button red left" >Очистить</button>
+    </fieldset>
+</form:form>

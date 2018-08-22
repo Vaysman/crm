@@ -1,8 +1,8 @@
-package ru.spb.lanton.soft.ag.crm.web.model;
+package ru.spb.lanton.soft.ag.crm.web.model.greencard;
 
-import javax.enterprise.inject.Model;
+//import javax.enterprise.inject.Model;
 
-@Model
+//@Model
 public class Greencard {
 
     private Polis polis;

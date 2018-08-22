@@ -1,4 +1,4 @@
-package ru.spb.lanton.soft.ag.crm.web.model;
+package ru.spb.lanton.soft.ag.crm.web.model.greencard;
 
 public class Client {
     
@@ -14,10 +14,16 @@ public class Client {
 
     private String lastName_ENG;
 
-    private int pasport_seria;
+    private int passport_rf_id;
 
-    private int pasport_number;
+    private int passport_rf_intern_id;
 
+    private int passport_foreing_id;
+    
+    private String address_RUS;
+    
+    private String address_ENG;
+    
     private int phone_mobile;
 
     private int phone_home;
@@ -86,20 +92,28 @@ public class Client {
         this.lastName_ENG = lastName_ENG;
     }
 
-    public int getPasport_seria() {
-        return pasport_seria;
+    public int getPassport_rf_id() {
+        return passport_rf_id;
     }
 
-    public void setPasport_seria(int pasport_seria) {
-        this.pasport_seria = pasport_seria;
+    public void setPassport_rf_id(int passport_rf_id) {
+        this.passport_rf_id = passport_rf_id;
     }
 
-    public int getPasport_number() {
-        return pasport_number;
+    public int getPassport_rf_intern_id() {
+        return passport_rf_intern_id;
     }
 
-    public void setPasport_number(int pasport_number) {
-        this.pasport_number = pasport_number;
+    public void setPassport_rf_intern_id(int passport_rf_intern_id) {
+        this.passport_rf_intern_id = passport_rf_intern_id;
+    }
+
+    public int getPassport_foreing_id() {
+        return passport_foreing_id;
+    }
+
+    public void setPassport_foreing_id(int passport_foreing_id) {
+        this.passport_foreing_id = passport_foreing_id;
     }
 
     public int getPhone_mobile() {

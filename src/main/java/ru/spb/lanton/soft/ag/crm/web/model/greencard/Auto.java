@@ -1,4 +1,4 @@
-package ru.spb.lanton.soft.ag.crm.web.model;
+package ru.spb.lanton.soft.ag.crm.web.model.greencard;
 
 public class Auto {
     

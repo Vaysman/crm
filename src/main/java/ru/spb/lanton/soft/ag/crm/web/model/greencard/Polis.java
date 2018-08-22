@@ -1,4 +1,4 @@
-package ru.spb.lanton.soft.ag.crm.web.model;
+package ru.spb.lanton.soft.ag.crm.web.model.greencard;
 
 import java.sql.Date;
 import java.util.ArrayList;

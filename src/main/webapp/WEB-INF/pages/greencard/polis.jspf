@@ -2,14 +2,16 @@
 <%@ page pageEncoding="UTF-8" %>
 <h2>Сведения о полисе:</h2>
 <form:form modelAttribute="polis" action="greencard?p=2" method="POST">
-    <fieldset>
-        <span>Тип полиса: </span> <input type="text" value="${polis_type}" disabled="true" />
-        <span>Страховая компания: </span> <form:select path="insurance_id" items="${companys}"/>
-        <span>Номер полиса: </span> <form:input path="number" size="20"/>
-        <span>Серия полиса: </span> <form:input path="seria" size="20"/>
-        <span>Период страхования: </span> <form:select id="period" onchange="checkDate()" path="period" items="${period}"/>
-        <span>Территория действия: </span> <form:select path="territory_id" items="${territory}"/>
-        <span>Срок действия:</span> <span>с:</span> <input id="date_from" type="date" onchange="checkDate()" size="10" /> <span>по:</span> <input id="date_to" type="date" size="10" disabled="true" />
+    <fieldset class="form-polis">
+        <span>Тип полиса: </span> <input type="text" value="${polis_type}" disabled="true" /> <br />
+        <span>Страховая компания: </span> <form:select path="insurance_id" items="${companys}"/> <br />
+        <span>Номер полиса: </span> <form:input path="number" id="number" size="20" title="Введите номер полиса после RUS" placeholder="Введите номер полиса после RUS" required="required" />
+        <span>Серия полиса: </span> <form:input path="seria" id="seria" size="20" title="Введите серию полиса" placeholder="Введите серию полиса" required="required" /> <br />
+        <span>Территория действия: </span> <form:select path="territory_id" items="${territory}"/> <br />
+        <span>Период страхования: </span> <form:select id="period" onchange="checkDate()" path="period" items="${period}"/> <br />
+        <span>Срок действия:</span> 
+        <span>с:</span> <input id="date_from" type="date" onchange="checkDate()" size="10" title="Выберите дату начала действия договора" required="required"/> 
+        <span>по:</span> <input id="date_to" type="date" size="10" disabled="true" /> <br />
         <span>Дата продажи: </span> <span> <input id="date_sale" type="date" size="10" value="${date_sale}" disabled="true"/> </span>
     </fieldset>
     <br />
@@ -17,6 +19,10 @@
     <form:button class="right green button">Далее</form:button>
 </form:form>
 <script type="text/javascript">
+    $(function() {
+        $('#number').val("");
+        $('#seria').val("");        
+    });
     function checkDate() {
         if ($('#date_from').val() < $('#date_sale').val()) {
             $('#date_from').addClass('red'); // типа если дата действия меньше даты продажи, то подсвечиваем красным и выводим подсказку с ошибкой!

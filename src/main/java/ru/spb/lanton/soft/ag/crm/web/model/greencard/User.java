@@ -1,8 +1,8 @@
-package ru.spb.lanton.soft.ag.crm.web.model;
+package ru.spb.lanton.soft.ag.crm.web.model.greencard;
 
 public class User {
 
-    private String login;
+    private String username;
     
     private String password;
     
@@ -11,12 +11,12 @@ public class User {
     public User() {
     }
 
-    public String getLogin() {
-        return login;
+    public String getUsername() {
+        return username;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

@@ -1,6 +1,5 @@
 package ru.spb.lanton.soft.ag.crm.web;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -11,11 +10,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import ru.spb.lanton.soft.ag.crm.web.data.DateFormat;
-import ru.spb.lanton.soft.ag.crm.web.model.Auto;
-import ru.spb.lanton.soft.ag.crm.web.model.Client;
-import ru.spb.lanton.soft.ag.crm.web.model.Greencard;
-import ru.spb.lanton.soft.ag.crm.web.model.Polis;
-import ru.spb.lanton.soft.ag.crm.web.model.User;
+import ru.spb.lanton.soft.ag.crm.web.model.greencard.Auto;
+import ru.spb.lanton.soft.ag.crm.web.model.greencard.Client;
+import ru.spb.lanton.soft.ag.crm.web.model.greencard.Greencard;
+import ru.spb.lanton.soft.ag.crm.web.model.greencard.Polis;;
 
 @Controller
 public class MainController {
@@ -23,16 +21,9 @@ public class MainController {
     private final Greencard greencard = new Greencard();
 
     @RequestMapping(value = "/main", method = RequestMethod.GET)
-    public String main(@ModelAttribute("user") User user) {
-
+    public String main() {        
         return "main";
     }
-
-//    @RequestMapping(value = "/greencard", method = RequestMethod.GET)
-//    public String greencard() {
-//        
-//        return "greencard";
-//    }
 
     @RequestMapping(value = "/greencard")
     public ModelAndView greencard(@RequestParam("p") String param, @ModelAttribute("polis") Polis polis, @ModelAttribute("client") Client client, @ModelAttribute("auto") Auto auto) {
@@ -42,8 +33,9 @@ public class MainController {
                 mav.addObject("polis", new Polis());
                 
                 // TODO
-                // сделать получение списка СК из БД
                 Map<Integer, String> companys = new HashMap<>();
+                // сделать получение списка СК из БД
+                //companys.putAll(db.getAllIC); db - объект для получения сведений из БД. getAllIC - метод для получения списка всех страховых компаний.
                 companys.put(1, "Ресо-Гарантия");
                 companys.put(2, "Альфа страхование");
                 companys.put(3, "РосГосСтрах");
@@ -88,6 +80,14 @@ public class MainController {
                     // сделать страницу для обработки ошибок ввода
                     return new ModelAndView("Error");
                 }
+                //TODO
+                // добавляем список с типом документа предьявляемого клиентом
+                Map<Integer, String> documentType = new LinkedHashMap<>();
+                documentType.put(1, "Паспорт РФ");
+                documentType.put(2, "Загранпаспорт гражданина РФ");
+                documentType.put(3, "Паспорт гражданина иностранного государства");
+                mav.addObject("documentType", documentType);
+                
                 mav.addObject("client", new Client());
                 return mav;
             case "3":
@@ -99,6 +99,14 @@ public class MainController {
                     // сделать страницу для обработки ошибок ввода
                     return new ModelAndView("Error");
                 }
+                // TODO
+                // добавляет типы ТС из БД
+                Map<Integer, String> typeAuto = new LinkedHashMap<>();
+                typeAuto.put(1, "Легковые автомобили");
+                typeAuto.put(2, "Мотоциклы");
+                typeAuto.put(3, "Автобусы");
+                mav.addObject("typeAuto", typeAuto);
+                
                 mav.addObject("auto", new Auto());                
                 return mav;
             case "end":
@@ -126,6 +134,7 @@ public class MainController {
         mav.addObject("greencard", greencard);
         return mav;        
     }
+
 
 }
 

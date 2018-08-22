@@ -1,29 +1,42 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 <h2>Сведения о страхователе:</h2>
-<form:form modelAttribute="client" action="greencard?p=3" method="POST">
-    <fieldset>
-        <span>Документ: </span> <form:input path="" />
+<form:form modelAttribute="client" onsubmit="checkBeforeSending()" action="greencard?p=3" method="POST">
+    <fieldset class="form-polis">
+        <span>Документ: </span> <form:select path="" items="${documentType}"/> <br />
         <span>Серия: </span> <form:input path="" />
-        <span>Номер: </span> <form:input path="" />
-        <span>Дата выдачи: </span> <form:input path="" />
-        <span>Кем выдан: </span> <form:input path="" />
+        <span>Номер: </span> <form:input path="" /> <br />
+        <span>Дата выдачи: </span> <form:input path="" type="date" />
+        <span>Кем выдан: </span> <form:input path="" size="60"/>
         <br /> <hr />
-        <span>Фамилия: </span><form:input path="lastName"/>
-        <span>Имя: </span><form:input path="name"/>
-        <span>Отчество: </span> <form:input path="fatherName" />
-        <span>Фамилия ENG: </span> <form:input path="lastName_ENG" />
-        <span>Имя ENG: </span> <form:input path="name_ENG" />
+        <span>Фамилия: </span><form:input path="lastName" size="20"/>
+        <span>Имя: </span><form:input path="name" size="20"/>
+        <span>Отчество: </span> <form:input path="fatherName" size="20" /> <br />
+        <span>Фамилия ENG: </span> <form:input path="lastName_ENG" size="20"/>
+        <span>Имя ENG: </span> <form:input path="name_ENG" size="20"/>
         <br /> <hr />
-        <span>Адрес регистрации: </span> <form:input path="" />
-        <span>Адрес регистрации ENG: </span> <form:input path="" />
+        <span>Адрес регистрации: </span> <form:input path="" size="60"/> <br />
+        <span>Адрес регистрации ENG: </span> <form:input path="" size="60"/>
         <br /> <hr />
-        <span>Мобильный телефон: </span> <form:input path="phone_mobile" />
-        <span>Домашний телефон: </span> <form:input path="phone_home" />
-        <span>Рабочий телефон: </span> <form:input path="phone_job" />
-        <span>E-mail: </span> <form:input path="email" />
+        <span>Мобильный телефон: </span> <form:input path="phone_mobile" id="phone_mobile" title="Введите номер мобильного телефона" placeholder="89117257712" /> <br />
+        <span>Домашний телефон: </span> <form:input path="phone_home" id="phone_home" title="Введите номер домашнего телефона" placeholder="3251522" /> <br />
+        <span>Рабочий телефон: </span> <form:input path="phone_job" id="phone_job" title="Введите номер рабочего телефона" placeholder="Введите номер рабочего телефона" /> <br />
+        <span>E-mail: </span> <form:input path="email" type="email" />
     </fieldset>
     <br />
     <form:button class="left red button">Назад</form:button>
     <form:button class="right green button">Далее</form:button>
 </form:form>
+
+<script>
+    $(function() {
+        $('#phone_mobile').val("");
+        $('#phone_home').val("");
+        $('#phone_job').val("");
+    });
+    function checkBeforeSending() {
+        if ($('#phone_mobile').val() === "") $('#phone_mobile').val(0);
+        if ($('#phone_home').val() === "") $('#phone_home').val(0)
+        if ($('#phone_job').val() === "") $('#phone_job').val(0)
+    }
+</script>

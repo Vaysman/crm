@@ -1,0 +1,22 @@
+.form-polis input, .form-polis select {
+    width: auto;
+    display: inline-block;
+    margin: 1em;
+}
+
+.form-segment {
+    width: 80%;
+    margin: 0 auto;
+}
+.form-segment input, .form-segment select {
+    width: auto;
+    display: inline-block;
+}
+
+.widthAuto {
+    width: auto;
+}
+
+label {
+    display: inline;
+}
